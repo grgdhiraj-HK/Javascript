@@ -17,6 +17,10 @@
     alert(`Your name is ${name} and you are ${age} years old. Your Town is ${town}`);
     if (confirm(`Are you  ${name} aged  ${age} years old from ${town}?`)) {
     } else {
+        alert(`Restart`);
+        let name = prompt('What is your name?');
+        let age = prompt('How old are you?');
+        let town = prompt("Where do you live?");
 
         // Do nothing!
     }
