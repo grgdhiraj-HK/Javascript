@@ -7,14 +7,18 @@
  */
 
 // NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
+// You will have time to focus on it later
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
+        // for loop over numbers till 21
+        for (var i = 1; i < 22; i++) {
+            //strict equality modulo to not print random comma numbers
+           alert( Math.pow(i,2))
+            
 
-        // your code here
-
+    }
     });
+
 
 })();
