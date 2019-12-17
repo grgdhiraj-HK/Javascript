@@ -10,12 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    //gets value from list
+    let numberlist = (document.getElementById("numbers").value);
+    let numberArray = numberlist.split(',');
 
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        // sorts the elements by comparing which one is bigger
+        alert(numberArray.sort((a, b) => {return a-b;}))
 
     });
 

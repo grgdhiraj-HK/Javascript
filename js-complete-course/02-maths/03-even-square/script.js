@@ -15,7 +15,7 @@
         for (var i = 1; i < 22; i++) {
             //strict equality modulo to not print random comma numbers
            alert( Math.pow(i,2))
-            
+
 
     }
     });
