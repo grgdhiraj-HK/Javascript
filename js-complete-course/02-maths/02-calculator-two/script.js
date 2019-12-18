@@ -8,11 +8,25 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+function Calculation(math) {
+ var x = parseFloat(document.getElementById("op-one").value);
+ var y = parseFloat(document.getElementById("op-two").value);
 
-function test() {
-    return true;
+
+
+    switch (math) {
+        case "addition":
+            solution = (x + y);
+            break;
+        case "substraction":
+            solution = (x - y);
+            break;
+        case "multiplication":
+            solution = (x * y);
+            break;
+        case "division":
+            solution = (x / y);
+            break;
 }
-
-(function() {
-    return true;
-})();
+    alert("The answer is " + solution);
+}
