@@ -12,7 +12,7 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
+let
     // your code here
 
 })();
