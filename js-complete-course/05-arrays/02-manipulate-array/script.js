@@ -25,5 +25,37 @@
     ];
 
     // your code here
+    (function() {
 
+        var fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+
+        document.getElementById("run").addEventListener("click", function() {
+
+            // to remove the first and the last element,
+            fruits.shift();
+            fruits.pop();
+
+            // let's add an element "banana" at the start of the array
+            fruits.unshift("banana");
+
+            // now add an element "kiwi" at the end.
+            fruits.push("kiwi");
+
+            // see the result
+            alert(fruits);
+
+        });
+
+    })();
 })();
