@@ -16,3 +16,17 @@
     // your code here
 
 })();
+
+(function() {
+
+    //document.getElementById("target").innerHTML = "new-value"
+
+    var d = new Date().getHours();
+    if (d < 1730) {
+        document.getElementById("target").innerHTML = "Hello";
+    }
+    else {
+        document.getElementById("target").innerHTML = "Good evening!"
+    }
+
+})();
