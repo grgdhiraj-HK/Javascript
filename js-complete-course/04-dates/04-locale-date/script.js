@@ -8,6 +8,7 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+        // your code here
 
 (function() {
     let today = new Date();
@@ -17,7 +18,3 @@
 
     document.getElementById("target").innerHTML = today.toLocaleDateString("en-US", options);
 })();
-
-        // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-        // your code here
