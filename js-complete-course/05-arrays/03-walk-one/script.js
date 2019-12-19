@@ -10,8 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var fruits = [
+//array
+    var fruits  =
+    [
         "apple",
         "pear",
         "raspberry",
@@ -26,6 +27,21 @@
         "cherry",
     ];
 
-    // your code here
-
-})();
+    //button
+    document.getElementById("run").addEventListener("click", function () {
+        var fruits = ["apple",
+            "pear",
+            "raspberry",
+            "tomatos",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peache",
+            "grap",
+            "cherry",];
+        for (var i = 0; i < 6; i++) {
+            fruits.push(i * 3);
+            console.log(fruits[i]);
+        }})})
