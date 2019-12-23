@@ -1,3 +1,7 @@
+## UPDATE: it's Monday & back to BeCode!
+- Pulled everything to BeCode and start working on a remaining exercises!
+
+
 ## WORK FROM HOME DAY
 
 - Work in Progress but taking time to research and trying to understand the concepts 
