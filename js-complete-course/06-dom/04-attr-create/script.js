@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    function swap(){
+        let image = document.getElementById("source").getAttribute("data-image");
+        let imgElement = document.createElement('img');
+        imgElement.src = image;
+        let target = document.querySelector("#target");
+        target.appendChild(imgElement);
+        let remove = document.getElementById("source");
+        remove.parentNode.removeChild(remove);
+    }
+    window.onload = swap;
 })();
