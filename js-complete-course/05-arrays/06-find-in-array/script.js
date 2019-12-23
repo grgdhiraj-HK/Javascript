@@ -1,14 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/06-find-in-array/script.js - 5.6: recherche dans un tableau
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
 (function() {
 
     var people = [
@@ -89,6 +78,16 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        people.forEach(JeanDupont);
+    });
 
 })();
+
+function JeanDupont(arrayOfPeople, index) {
+    if (arrayOfPeople.firstname === "Jean" && arrayOfPeople.lastname === "Dupont") {
+        console.log(arrayOfPeople.email + " index:" + index);
+    }
+}
+
+// Look at the console (press F12) to see how it works!)

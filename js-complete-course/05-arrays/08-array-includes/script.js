@@ -25,7 +25,17 @@
         "grapes",
         "cherry",
     ];
+// The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let result = fruits.includes('apple');
+        if (result == true){
+            console.log("Yes");
+        }
+        else {
+            console.log("No");
+        }
+    })
+
 
 })();
