@@ -12,5 +12,7 @@
 (function() {
 
     // your code here
-
+    document.querySelector("#target").innerHTML = "owned"
+//querySelector() returns the first element within the document that matches the specified selector, or group of selectors.
+//In #target - # hashtag denotes selector
 })();
