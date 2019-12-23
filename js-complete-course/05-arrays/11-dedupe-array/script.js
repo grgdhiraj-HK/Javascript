@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    const fruits = [
         "cerise",
         "durian",
         "pomme",
@@ -28,6 +28,12 @@
         "cerise",
     ];
 
-    // your code here
-
+    // your code here (Dedupe = remove duplicates)
+    document.getElementById("run").addEventListener("click", function () {
+        let unique = [...new Set(fruits)];
+        console.log(unique);
+    })
 })();
+
+//'Set' only lets you store unique values. When you pass in an array, it will remove any duplicate values.
+// Ref: https://bit.ly/3628oWo

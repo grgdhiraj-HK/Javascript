@@ -90,5 +90,16 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function()
+    {
+
+        let sum = people.reduce(sumofAges,0);
+        //The reduce() method executes a provided function for each value of the array (from left-to-right).
+        function sumofAges(total, person) {
+            return total + person.age;
+        }
+        console.log(sum);
+    })
 
 })();
+
