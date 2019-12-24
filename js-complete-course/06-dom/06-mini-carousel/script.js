@@ -21,4 +21,20 @@
 
     // your code here
 
+    let image = document.querySelector("img");
+    let i = 0;
+
+    document.getElementById("next").addEventListener("click", function () {
+
+        if (i < 4){
+            i++;
+            image.setAttribute("src", gallery[i]);
+        } else {
+            i = 0;
+            image.setAttribute("src", gallery[i]);
+        }
+
+    })
+
 })();
+

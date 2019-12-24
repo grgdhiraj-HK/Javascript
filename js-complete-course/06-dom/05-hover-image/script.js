@@ -12,5 +12,22 @@
 (function() {
 
     // your code here
-    
+
+    const image = document.getElementsByTagName("img");
+
+    let kiss = image[0].getAttribute("data-hover");
+    let nokiss = image [0].getAttribute("src");
+
+    console.log(image);
+    console.log(kiss);
+
+    image[0].onmouseover = function () {
+        image[0].src = kiss;
+    };
+
+    image[0].onmouseout = function () {
+        image[0].src = nokiss;
+    }
+
+
 })();
