@@ -13,4 +13,17 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click",function(){
+        let pwd1 = document.getElementById("pass-one").value;
+        let pwd2= document.getElementById("pass-two").value;
+
+        if(pwd1 !== pwd2){
+            document.getElementById("pass-one").style.borderColor = "red";
+            document.getElementById("pass-two").style.borderColor = "red";
+        }
+        else {
+            alert("Success!");
+        }
+    })
+
 })();
