@@ -10,7 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+    let target = document.getElementById("target");
+    let table = document.createElement("table");
+
+    for (let i = 1; i < 11; i++){
+        let row = document.createElement("tr");
+
+
+        for (let j = 1; j < 11; j++){
+            let col = document.createElement("td");
+            let data = document.createTextNode(" " + i*j);
+            col.appendChild(data);
+            row.appendChild(col);
+        }
+        table.appendChild(row);
+    }
+
+    target.appendChild(table);
 
 })();
+
+//
+

@@ -14,16 +14,16 @@
 
     // your code here
 
-    var target = document.getElementById("target");
-    var table = document.createElement("table");
+    let target = document.getElementById("target");
+    let table = document.createElement("table");
 
    table.style.width = "100%";
 
     target.appendChild(table);
 
-    for (var i = 0; i < 10; i++){
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
+    for (let i = 0; i < 10; i++){
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
         tr.style.height = "30px";
        table.appendChild(tr);
         tr.appendChild(td);
