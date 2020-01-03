@@ -10,5 +10,5 @@
 
 // You will have time to focus on it later.
 
-var name=prompt('What is your name?','Name');
+let name=prompt('What is your name?');
 alert('Hello '+name+'!');

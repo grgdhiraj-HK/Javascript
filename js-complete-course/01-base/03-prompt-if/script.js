@@ -10,13 +10,16 @@
 // You will have time to focus on it later.
 
 (function () {
-    var cake;
-    cake = prompt("Would you like some cake?")
+    let cake;
+    cake = prompt("Would you like some cake?");
 
-    if (cake == "yes") {
+    if (cake ==="yes" || cake ==="Yes" || cake==="of course" || cake==="yeah" || cake==="ok"){
         alert("Congratulations🎂")
+       /*Triple Equals is superior to double equals. Whenever possible, you should use triple equals to test equality. */
+
     } else {
         alert("More for me then 😜!")
 
     }
 })();
+
