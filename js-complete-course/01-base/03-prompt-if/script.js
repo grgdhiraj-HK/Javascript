@@ -16,7 +16,7 @@
     if (cake ==="yes" || cake ==="Yes" || cake==="of course" || cake==="yeah" || cake==="ok"){
         alert("Congratulations🎂")
        /*Triple Equals is superior to double equals. Whenever possible, you should use triple equals to test equality. */
-
+        // Logical operator || denotes OR
     } else {
         alert("More for me then 😜!")
 

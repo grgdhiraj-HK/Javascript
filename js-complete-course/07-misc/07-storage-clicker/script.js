@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+    (function() {
 
+        let target = document.getElementById("target");
+        let button = document.getElementById("increment");
+        let count = window.localStorage.getItem("counter");
+        target.innerHTML = count;
+
+        if(target.innerHTML=""){
+            target.innerHTML = 0;
+        }
+        button.addEventListener("click" , function(){
+            count++;
+            target.innerHTML =count;
+            window.localStorage.setItem("counter" , count);
+
+        });
+    })();
 })();

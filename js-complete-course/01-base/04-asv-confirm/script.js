@@ -15,15 +15,19 @@
     let town = prompt("Where do you live?");
 
     alert(`Your name is ${name} and you are ${age} years old. Your Town is ${town}`);
-    if (confirm(`Are you  ${name} aged  ${age} years old from ${town}?`)) {
-    } else {
+    // new way with $ sign
+    // ` this is backtick and used while using $ sign
+    if (confirm('Are you ' + name + ' aged '+ age + ' years old from ' + town +'?'));
+// string addition; concatenation - traditional method
+    //The dollar sign $ here is to represent string - see template literals on MDN
+
+     else {
         alert(`Restart`);
         let name = prompt('What is your name?');
         let age = prompt('How old are you?');
         let town = prompt("Where do you live?");
 
-        // Do nothing!
+
     }
-    // your code here
 
 })();
