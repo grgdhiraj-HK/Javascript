@@ -10,24 +10,23 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
-        let target = document.getElementById("target");
-        let wavyWords = target.innerText.split("");
-        console.log(wavyWords);
-        let word = "", text = "", size =  12;
-        for(let i=0; i<wavyWords.length; i++){
-            if (size % 1 === 0) {
-                size = 9;
-                word = wavyWords[i].toString();
-                text += word.fontsize(size) + " ";
-            } else {
-                word = wavyWords[i].toString();
-                console.log(size);
-                text += word.fontsize(size) + " ";
-            }
-            size+= 17;
+    var container = document.getElementById("target");
+    var letters = document.getElementById("target").innerText;
+    console.log(letters);
+    letters = letters.split("");
+    console.log(letters);
+    container.innerText = "";
+    var fsize = 20;
+    var checker = true;
+    letters.forEach(function(letter) {
+        var wrap = document.createElement("span");
+        wrap.innerText = letter;
+        wrap.style.fontSize = fsize +"px";
+        if (fsize > 50) {
+            fsize = 20;
         }
-        target.innerHTML = text;
+        fsize += 5;
 
-    })();
-
+        container.appendChild(wrap);
+    });
+})();
