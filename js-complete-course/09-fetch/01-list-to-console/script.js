@@ -13,7 +13,7 @@
     // your code here
     (() => {
         document.getElementById("run").addEventListener("click", function(){
-
+//See reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
             fetch("http://localhost:63342/js-complete-course/_shared/api.json")
                 .then(function(response){
                     return response.json();
