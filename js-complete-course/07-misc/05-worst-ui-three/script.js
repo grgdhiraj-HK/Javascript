@@ -12,5 +12,12 @@
 (function() {
 
     // your code here
+let firstSlot= "460";
+let secondSlot= "00";
+let thirdSlot= "00";
+let fourthSlot="00";
 
+function () {
+
+}
 })();
