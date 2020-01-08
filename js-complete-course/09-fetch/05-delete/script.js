@@ -26,7 +26,7 @@
                 document.getElementById("run").addEventListener("click", function(){
 
 
-                    var input = document.getElementById("hero-id").value;
+                    let input = document.getElementById("hero-id").value;
 
                     array.splice(input-1,1);
 
