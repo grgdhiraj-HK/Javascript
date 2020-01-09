@@ -8,8 +8,8 @@
 
 ((ns, utils) => {
     ns.wait = (delay, next) => setTimeout(next, delay);
-
-    ns.getPosts = next =>
+// => sign means function(parameter)
+        ns.getPosts = next =>
         ns.wait(1000, () =>
             next(
                 null,

@@ -28,7 +28,7 @@
 
                     let input = document.getElementById("hero-id").value;
 
-                    array.splice(input-1,1);
+                    array.splice(input -1,1);
 
                     console.log(data.heroes);
 
